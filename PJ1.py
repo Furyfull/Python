@@ -16,4 +16,4 @@ for jogo in range(1, jogos+1):
             break
     print(rnd)
 
-testes
+testado
