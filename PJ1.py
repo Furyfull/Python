@@ -11,5 +11,5 @@ while True:
     # set gets unique elements
     if len(rnd) == len(set(rnd)):
         break
-print(rnd)
+    print(rnd)
 
