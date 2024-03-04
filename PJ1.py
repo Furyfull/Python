@@ -1,4 +1,5 @@
 import random
+
 numb = {"1": 2, "2": 5, "5": 3, '4': 5}
 lst = []
 for i in numb:
@@ -8,7 +9,7 @@ print(lst)
 quant_de_numeros = 3
 jogos = 3
 
-for jogo in range(1, jogos+1):
+for jogo in range(1, jogos + 1):
     while True:
         rnd = random.sample(lst, quant_de_numeros)
         # set gets unique elements
