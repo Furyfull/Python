@@ -15,3 +15,5 @@ for jogo in range(1, jogos+1):
         if len(rnd) == len(set(rnd)):
             break
     print(rnd)
+
+testes
