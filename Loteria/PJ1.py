@@ -2,7 +2,7 @@ import random
 import json
 
 
-def cartela(numb,jog,numeros):
+def cartela(numb, jog, numeros):
     assert isinstance(numb, dict)
     lst = []
     resposta = []
@@ -25,6 +25,6 @@ def cartela(numb,jog,numeros):
         print(resposta)
 
 
-numb = json.load(open('numeros_da_lotofacil.json', 'r'))
-numb = "4rr"
-cartela(numb, 3, 15)
+# ss = json.load(open('numeros_da_lotofacil.json', 'r'))
+ss = "4rr"
+cartela(ss, 3, 15)
