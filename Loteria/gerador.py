@@ -21,9 +21,10 @@ def cartela(numb, jog, numeros):
 
         rnd.sort()
         resposta.append(rnd)
+    print(f"R${jog*3},00")
     return resposta
 
 
 database = json.load(open('numeros_da_lotofacil.json', 'r'))
-gg = cartela(database, 3, 15)
+gg = cartela(database, 5, 15)
 print(*gg, sep='\n')
