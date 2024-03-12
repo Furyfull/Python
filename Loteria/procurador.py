@@ -78,3 +78,25 @@ def lotofacil_numb():
         json.dump(tu, dog)
 
 
+def gabarito():
+    driver = webdriver.Edge()
+    driver.get('https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx')
+    passos = 0
+
+    ff = open('ultimos_14_jogos.txt', 'w')
+
+    while passos < 14:
+        numeros = []
+        passos += 1
+        bg = driver.find_elements(By.XPATH, '//li[@class="ng-binding dezena ng-scope"]')
+        for i in bg:
+            numeros.append(int(i.text))
+        numeros.sort()
+        ff.write(f"{numeros},\n")
+        print(numeros)
+        ant = driver.find_element(By.LINK_TEXT, '< Anterior')
+        ant.click()
+        sleep(1.5)
+
+
+gabarito()
