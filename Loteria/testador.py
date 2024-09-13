@@ -13,5 +13,5 @@ for resultado in base:
             ganho += din[f'{soma}']
     print(ganho)
     total += ganho
-    gasto += 3*12
+    gasto += 408*12
 print('ganhou', total, 'gastou', gasto, 'em', len(base), 'semanas')
